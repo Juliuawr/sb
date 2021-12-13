@@ -1,0 +1,16 @@
+{
+  "name": "sb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^3.3.3",
+    "@capacitor/cli": "^3.3.3",
+    "@capacitor/core": "^3.3.3"
+  },
+  "description": ""
+}
