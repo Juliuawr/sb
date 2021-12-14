@@ -2,7 +2,7 @@ body
   background-color: #FFFFFF
   font-family: 'Roboto', sans-serif
   margin: 0 auto
-
+  overflow-x: hidden
 
 .banner
   img
@@ -65,10 +65,10 @@ body
   display: none
   float: left
   @media screen and (max-width : 500px)
-    display: inline
+    display: block
+    margin-left: 200px
     img
       margin-top: 15px
-      margin-left: 200px
       border: 0
       background: transparent
       position: relative
@@ -146,11 +146,13 @@ body
   @media screen and (max-width: 500px)
     box-shadow: 0px 0px 10px  #C3C3C3
     border-radius: 10px
-    width: 168px
+    max-width: 168px
     height: 37px
-    top: 160px
+    top: 140px
     margin-left: -220px
-    font-size: 14px
+    font-size: 3.5vw
+    position: relative
+    bottom: 10px
 
 .button1:hover
   background: #0BF5FF
@@ -161,7 +163,7 @@ body
   margin-top: -36px
   margin-bottom: -170px
   @media screen and (max-width: 500px)
-      width: 484px
+      max-width: 500px
       height: 143px
       margin-top: -17px
       margin-bottom: -130px
@@ -202,7 +204,7 @@ ul.a li
   max-width: 430px
   @media screen and (max-width: 500px)
     border-radius: 0px
-    margin-left: -20px
+    margin-left: 0px
     img
       width: 500px
       height: 220px
@@ -234,7 +236,7 @@ ul.a li
       box-shadow: none
       border-radius: none
       height: 390px
-      max-width: 360px
+      max-width: 500px
       img
         border-radius: 0px
 
@@ -243,6 +245,7 @@ ul.a li
   @extend %cardinf
   @media screen and (max-width: 500px)
     margin: 136px 0px 0px 0px
+    margin-bottom: -25px
 
 
 #cardleft
@@ -250,8 +253,9 @@ ul.a li
   @extend %cardinf
   @media screen and (max-width: 500px)
     float: left
-    margin-left: 5px
-    margin-bottom: 5px
+    margin-right: 0px
+    margin-left: 0px
+    margin-bottom: -10px
 
 #cardright
   margin: 0px 0px 0px 300px
@@ -260,7 +264,10 @@ ul.a li
   @media screen and (max-width: 500px)
     float: left
     margin: 0px
-    margin-bottom: -60px
+    margin-bottom: -85px
+
+
+
 
 .details
   position: relative
@@ -272,6 +279,12 @@ ul.a li
   margin-bottom: -240px
   @media screen and (max-width: 500px)
     height: 158px
+    max-width: 180px
+    padding: 5px 0px 0px 20px
+
+
+
+
 
 %cardH1
   display: inline-block
@@ -279,8 +292,10 @@ ul.a li
   font-size: 2.2vw
   margin: 0
   @media screen and (max-width: 500px)
-    margin-left: 20px
+    margin-left: 10px
     font-size: 3.2vw
+
+
 
 #cardleft .details h1
   @extend %cardH1
@@ -297,8 +312,9 @@ ul.a li
   line-height: 1.5
   @media screen and (max-width: 500px)
     font-size: 2.5vw
-    width: 440px
-    margin-left: 20px
+    max-width: 500px
+    margin-left: 10px
+    margin-right: -120px
 
 #cardleft .details > p
   @extend %cardP
@@ -342,10 +358,11 @@ ul.a li
   height: 60px
   @media screen and (max-width: 500px)
     box-shadow: 20px
-    width: 168px
+    max-width: 168px
     height: 37px
     border-radius: 10px
-    margin-left: -30px
+    margin-left: -70px
+
 
 .button span
   transition: transform 1s
@@ -526,7 +543,7 @@ hr
   margin-bottom: -50px
   margin-top: -35px
   @media screen and (max-width: 500px)
-    width: 500px
+    max-width: 500px
     height: 57px
     margin-top: -25px
     margin-bottom: 10px
@@ -547,9 +564,11 @@ hr
   position: absolute
   transition: all 0.7s ease-in-out
   @media screen and (max-width: 500px)
-    margin-left: 430px
-    width: 20px
-    height: 20px
+    margin-left: 300px
+    right: 20px
+    width: 25px
+    height: 25px
+
 
 .hr-line
   max-width: 800px
@@ -557,6 +576,7 @@ hr
   @media screen and (max-width: 500px)
       max-width: 450px
       margin-left: 20px
+      margin-right: 20px
 
 .AQP1
   margin-top: 50px
@@ -580,6 +600,7 @@ hr
     margin-left: 5px
     padding: 15px 20px
 
+
 .AQB
   margin-top: -35px
   text-align: left
@@ -592,6 +613,7 @@ hr
   overflow: hidden
   @media screen and (max-width: 500px)
     margin-left: 20px
+    margin-right: 30px
     font-size: 13px
     padding: 15px 5px 0px
     max-width: 420px
