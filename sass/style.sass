@@ -487,14 +487,6 @@ hr
     visibility: hidden
 
 
-.imgarrow
-  img
-    height: 130px
-    width: 48px
-  @media screen and (max-width: 500px)
-    img
-      height: 50px
-      width: 9px
 
 %arrows
   cursor: pointer
@@ -503,9 +495,8 @@ hr
   padding-right: 0px
   padding-top: 7%
   @media screen and (max-width: 500px)
-    top: 100%
     position: absolute
-    padding-top: 80px
+    padding-top: 25%
 
 
 
@@ -516,7 +507,7 @@ hr
     @extend %arrows
     padding-left: 970px
     @media screen and (max-width: 500px)
-      padding-left: 420px
+      padding-left: 84%
 
 
 
@@ -662,7 +653,6 @@ hr
 
 
 .galerea
-
   padding-left: 200px
   img
       text-align: center
@@ -672,14 +662,13 @@ hr
       padding-left: 20px
       margin-right: 20px
       img
-        text-align: left
-        width:  440px
-        height: 250px
+        text-align: center
+        max-width: 100%
         border-radius: 20px
 
 .imgarrow
   img
-    height: 130px
+    height: 100px
     width: 48px
   @media screen and (max-width: 500px)
     img
@@ -693,7 +682,7 @@ hr
   margin-top: -50px
   margin-right: 200px
   @media screen and (max-width: 500px)
-    top: 21%
+    top: 10%
     margin-right: 30px
 
 .prev
@@ -709,13 +698,15 @@ hr
   margin-bottom: 60px
   border-radius: 30px
   margin-left: 250px
+  width: 849px
+  height: 520px
   box-shadow: 0px 10px 40px  #C3C3C3
   @media screen and (max-width: 500px)
       margin-bottom: 120px
       border-radius: 20px
       box-shadow: 0px 0px 40px  #C3C3C3
       height: 240px
-      width: 440px
+      max-width:  90%
       margin-left: 20px
 
 .road
@@ -782,12 +773,12 @@ hr
     height: 50px
     margin-top: 5px
   @media screen and (max-width: 500px)
-      visibility: hidden
+      display: none
 
 
 ul.c
   margin: 0
-  margin-top: -106px
+  margin-top: -240px
   margin-left: -20px
 
 ul.c li
@@ -841,7 +832,8 @@ ul.c li
   @media screen and (max-width: 500px)
     top: 450px
     left: 20px
-    width: 430px
+    max-width: 430px
+    margin-right: 40px
     margin-left: 24px
     font-size: 13px
     margin-bottom: -130px
@@ -902,7 +894,7 @@ ul.c li
     background: #0BF5FF
 
 #oknoservis
-    width: 440px
+    max-width: 360px
     height: 300px
     text-align: center
     left: 20px
@@ -952,11 +944,13 @@ ul.b li
       padding-left: 50px
       margin-top: -32px
       margin-bottom: -15px
+      font-size: 4vw
 
 
 .Cancel
   @media screen and (max-width: 500px)
-    margin-left: 340px
+    margin-left: 320px
+    margin-right: 20px
     margin-top: 10px
     cursor: pointer
 
@@ -1036,7 +1030,7 @@ ul.b li
         margin-top: 18px
         padding-top: 5px
         margin-left: 20px
-        max-width: 516px
+        max-width: 460px
         margin-right: 10px
         height: 580px
         font-size: 2vw
