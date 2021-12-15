@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -52,16 +53,15 @@
 
 
   <article>
+
     <div id="oknoCard">
       <h1 >Билеты</h1>
       <p class="poknoCard  block"> От 900 руб</p>
       <div>
-        <button  class="buttonOkno block expose1 ">Купить</button>
+      <button  class="buttonOkno block expose1 ">Забронировать</button>
 
         <div id="overlay1">
-
           <div id="buy2" >
-
             <h1>Выбор билета  <div id="close" class="Cancel1 block"> <img src="img/Cancel.png"  alt="Cancel"></img></div></h1>
             <p>Взрослый</p>
             <p><b>1500 руб</b></p>
@@ -99,10 +99,11 @@
             <div  class="select-box"  >
               <label for="select-box1" class="label select-box1"><span class="label-desc">Причал отправления</span> </label>
               <select id="select-box1" class="select" onkeyup="myDisplay5(this.value)">
-           <option value="Адмиралтейство">Адмиралтейство</option>
+                <option value="Адмиралтейство">Адмиралтейство</option>
               </select>
-
-              <script>
+              <input class="inf" type="text" name="tel" placeholder="+7(000)000-00-00"><br>
+              <input class="inf" type="text" name="tel" placeholder="test@mail.ru"><br>
+<script>
                  $("select").on("click" , function() {$(this).parent(".select-box").toggleClass("open");});
                    $(document).mouseup(function (e){var container = $(".select-box");
                  if (container.has(e.target).length === 0)
@@ -115,38 +116,19 @@
                 </script>
 
             </div>
-               <button class="btn4" >Продолжить покупку</button>
+               <button class="btn4" >Продолжить</button>
+               <div class="confid">Вы соглашаетесь <span style="color:#5D5FEF;">с политикой конфиденциальности и обработкой персональных данных.</span> </div>
+
              </div>
 
 
              <div id="buy3">
-               <h1>
-                 <button class="btn5 CardSmall " >
-                   <img src="img/w.png" alt="Arrow"></img>
-                 </button> Покупка
-                 <div id="close1" class="Cancel2 ">
-                   <img src="img/Cancel.png"  alt="Cancel"></img>
-                 </div>
-               </h1>
-               <p>Выбранные билеты</p>
-               <p>Взрослый <div class="displayBuy block"  id="displayQuestion"></div></p>
-               <hr class="buyHR3">
-               <p>Льготный <div class="displayBuy block" id="displayQuestion1"></div></p>
-               <hr class="buyHR3">
-               <p>Детский до 12 лет<div class="displayBuy block"  id="displayQuestion2"></div></p>
-               <hr class="buyHR3">
-               <p>Детский до 5 лет<div class="displayBuy block"  id="displayQuestion3"></div></p>
-               <hr class="buyHR3">
-               <p>Дата<div class="displayBuy block"  id="displayQuestion4"></div></p>
-               <hr class="buyHR3">
-               <p>Причал<div class="displayBuy block"  id="displayQuestion5"></div></p>
-               <input class="inf" type="text" name="tel" placeholder="+7(000)000-00-00"><br>
-               <input class="inf" type="text" name="tel" placeholder="test@mail.ru"><br>
-               <a class="link" target="_blank" href="https://www.google.ru/">
-                 <button class="btn6"  >Оплатить</button>
-               </a>
-               <div class="confid">Вы соглашаетесь <span style="color:#5D5FEF;">с политикой конфиденциальности и обработкой персональных данных.</span> </div>
+               <p >Спасибо за бронирование</p>
+                  <div id="close1">
+                 <button class="btn6"  >Закрыть</button>
                </div>
+             </div>
+
              </div>
 
              <script>
@@ -167,6 +149,12 @@
 </div>
 
 </div>
+
+
+
+
+
+
 
 
     <h1 class="road1">Истории разводных мостов</h1>
