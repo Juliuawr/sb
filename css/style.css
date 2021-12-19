@@ -660,22 +660,6 @@ hr {
   }
 }
 
-.arrow {
-  left: 0px;
-  margin-left: 928px;
-  position: absolute;
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-}
-@media screen and (max-width: 500px) {
-  .arrow {
-    margin-left: 360px;
-    right: 50px;
-    width: 25px;
-    height: 25px;
-  }
-}
-
 .hr-line {
   max-width: 800px;
   margin-left: 200px;
@@ -716,6 +700,22 @@ hr {
     font-size: 14px;
     margin-left: 5px;
     padding: 15px 20px;
+  }
+}
+
+.arrow {
+  left: 0px;
+  margin-left: 928px;
+  position: absolute;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+@media screen and (max-width: 500px) {
+  .arrow {
+    position: fixed;
+    margin-left: 340px;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -1111,8 +1111,9 @@ ul.c li {
     max-width: 168px;
     height: 37px;
     border-radius: 10px;
-    margin-left: 120px;
-    margin-top: -20px;
+    margin-left: 180px;
+    margin-top: -60px;
+    margin-right: -20px;
     cursor: pointer;
     outline: none;
     background: #82E0E4;
@@ -1383,27 +1384,6 @@ ul.b {
   }
 }
 
-.calendar {
-  border: 1px solid black;
-  position: sticky;
-  border-radius: 20px;
-  max-width: 334px;
-  height: 20px;
-  font-size: 1.5vw;
-  padding: 10px 20px 10px 70px;
-  margin-left: 80px;
-  margin-top: 20px;
-}
-@media screen and (max-width: 500px) {
-  .calendar {
-    font-size: 3.5vw;
-    margin-left: 0px;
-    padding: 10px 30px 10px 80px;
-    margin-bottom: -10px;
-    background-color: #FFFFFF;
-  }
-}
-
 .btn2 {
   position: relative;
   cursor: pointer;
@@ -1621,13 +1601,13 @@ ul.b {
 }
 @media screen and (max-width: 500px) {
   .inf {
-    max-width: 250px;
+    width: 180px;
     font-size: 3.5vw;
     margin-right: 40px;
     margin-left: 0px;
     padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 30px;
     padding-bottom: 5px;
     margin-bottom: 10px;
   }
@@ -1646,6 +1626,29 @@ ul.b {
   }
 }
 
+.calendar {
+  border: 1px solid black;
+  position: sticky;
+  border-radius: 20px;
+  max-width: 334px;
+  height: 20px;
+  font-size: 1.5vw;
+  padding: 10px 20px 10px 70px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 500px) {
+  .calendar {
+    float: left;
+    width: 139px;
+    font-size: 3.5vw;
+    margin-left: 50px;
+    padding: 10px 30px 10px 80px;
+    margin-bottom: 0px;
+    background-color: #FFFFFF;
+  }
+}
+
 .select-box {
   cursor: pointer;
   position: relative;
@@ -1657,15 +1660,13 @@ ul.b {
 }
 @media screen and (max-width: 500px) {
   .select-box {
-    max-width: 250px;
+    width: 250px;
     font-size: 3.5vw;
     margin-right: 0px;
-    margin-left: 50px;
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 50px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-left: -30px;
+    padding: 10px 30px 10px 80px;
+    margin-bottom: 0px;
+    margin-top: 80px;
   }
 }
 
@@ -1722,6 +1723,7 @@ ul.b {
 @media screen and (max-width: 500px) {
   .label {
     font-size: 4vw;
+    padding: 12px 20px;
   }
 }
 
@@ -1775,6 +1777,7 @@ ul.b {
 @media screen and (max-width: 500px) {
   .number input[type=number] {
     font-size: 18px;
+    margin-left: -5px;
   }
 }
 
