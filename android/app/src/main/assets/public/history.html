@@ -95,7 +95,7 @@
               <input id="inputText3" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay3(this.value)" >
               <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
             </div>
-            <input id="inputText4" class="calendar" type="date" name="calendar" onkeyup="myDisplay4(this.value)">
+            <input placeholder="дд.мм.гггг" class="calendar infcal" type="text" onfocus="(this.type='date')" id="date">
             <div  class="select-box"  >
               <label for="select-box1" class="label select-box1"><span class="label-desc">Причал отправления</span> </label>
               <select id="select-box1" class="select" onkeyup="myDisplay5(this.value)">

@@ -66,6 +66,7 @@ body {
   .menu {
     display: block;
     margin-left: 200px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .menu img {
     margin-top: 15px;
@@ -134,6 +135,7 @@ body {
 .link {
   text-decoration: none;
   color: black;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .button1 {
@@ -699,6 +701,7 @@ hr {
   .AQP {
     font-size: 14px;
     margin-left: 5px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     padding: 15px 20px;
   }
 }
@@ -848,6 +851,7 @@ hr {
   .prev, .next {
     top: 10%;
     margin-right: 30px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 }
 

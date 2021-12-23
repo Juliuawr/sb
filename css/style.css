@@ -1617,6 +1617,14 @@ ul.b {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .infcal {
+    width: 180px;
+    text-align: left;
+    font-size: 3.5vw;
+  }
+}
+
 .confid {
   text-align: left;
   font-size: 1vw;
