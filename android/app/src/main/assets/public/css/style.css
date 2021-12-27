@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   overflow-x: hidden;
+  padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
 }
 
 .banner img {
@@ -1909,11 +1910,4 @@ ul.b {
   margin-right: 20px;
   background: white;
   position: fixed;
-}
-
-html {
-  --ion-safe-area-top: env(safe-area-inset-top);
-  --ion-safe-area-bottom: env(safe-area-inset-bottom);
-  --ion-safe-area-left: env(safe-area-inset-left);
-  --ion-safe-area-right: env(safe-area-inset-right);
 }
