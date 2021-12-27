@@ -4,7 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   overflow-x: hidden;
-  padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .banner img {
@@ -620,7 +620,7 @@ hr {
 @media screen and (max-width: 500px) {
   .next, .prev {
     position: absolute;
-    padding-top: 25%;
+    padding-top: 36%;
   }
 }
 
