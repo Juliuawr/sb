@@ -1,0 +1,4 @@
+com/Juliuawr/sb/MainActivity.java
+ com.Juliuawr.sb.MainActivity
+com/Juliuawr/sb/BuildConfig.java
+ com.Juliuawr.sb.BuildConfig
